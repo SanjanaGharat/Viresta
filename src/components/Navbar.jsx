@@ -43,15 +43,11 @@ const Navbar = () => {
 				<main className="col-12 d-flex justify-content-between align-items-center">
 				{/* Logo */}
 				
-				<Link to="/" className="fs-little-big logo text-decoration-none text-dark pb-10">
+				<Link to="/" className=" text-decoration-none text-dark pb-10 logo ">
 				
 					<h3 className=" mb-0 text-white">V<span className="fw-medium c-pink">iresta</span></h3>
 				</Link>
-				{/* <Link to="/" className="logo text-decoration-none text-dark pb-10">
-    <h3 style={{ fontSize: "40px" }} className="mb-0 text-white">
-        V<span className="fw-medium c-pink">iresta</span>
-    </h3>
-</Link> */}
+				
 
 				{/* Mobile Menu */}
 				<ul

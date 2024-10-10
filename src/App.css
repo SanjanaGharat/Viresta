@@ -4,9 +4,9 @@
 :root {
 	--c-black: #000000;
 	--c-white: #fff;
-	--c-d-gray: #31583d;
+	--c-d-gray: #4f755b;
 	--c-gray: #bfbaba;
-	--c-mm-gray: #ffafaf;
+	--c-mm-gray: #d8a0a0;
 	--c-m-gray: #e0e0e0;
 	--c-light-gray: #dcc9c9;
 	/* --c-pink: #bf83a6; */
@@ -15,11 +15,30 @@
 	--trans-3: 0.3s;
 }
 body {
+	
 	background-color: #63d471;
 	background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
 	
-	font-family: "Outfit", sans-serif !important;
+	font-family: "Outfit", sans-serif ;
 	color: #ffffff;
+}
+.moving-bg {
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    background-size: 400% 400%; /* Adjust the size for a smoother effect */
+    animation: moveBackground 10s ease infinite; /* Add the animation */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 ::-webkit-scrollbar {
 	width: 10px;
@@ -243,18 +262,20 @@ nav {
         width: 100vh;
         height: 1px;
         bottom: -18px;
-        left: 0;
+		left: 0;
+       
 	}
 	main .logo {
-
-		font-family: "Qwitcher Grypen", cursive;
-			font-weight: 700;
-			font-style: normal;
-			
+		margin-top: 20px;
+		margin-left: 20px;
+		font-family:Georgia, 'Times New Roman', Times, serif;
+		font: weight 1000px;;
+		font-style: normal;
 		height: 40px;
 		width: 185px;
-
+		font-size: 400px; 
 	}
+	
 	.logo:hover h3 {
 		transition: 0.2s;
 		color: var(--c-pink) !important;

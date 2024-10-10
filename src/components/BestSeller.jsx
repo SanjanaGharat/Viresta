@@ -17,13 +17,15 @@ const BestSeller = () => {
 			<HeaderDashed
 				head1="BEST"
 				head2="SELLERS"
-				paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio"
+				paragraph="Explore the most popular picks on Viresta! Our Best Sellers collection features top-rated items loved by our customers. Whether you're shopping for fashion, accessories, or home essentials, these high-demand products combine quality and value.
+
+Shop now to see what’s trending and grab your favorites before they’re gone!"
 			/>
 			<section>
                 <div className="row justify-content-center">
 				{bestSeller.map((product) => (
                     <div key={product._id} className="col-6 col-md-4 col-lg-3 col-xl mt-3" style={{maxWidth: '350px'}}>
-                        <CollectionCard data={product} classPadding="px-0" />
+                        <CollectionCard data={product} classPadding="px-10" />
                     </div>
 				))}
                 </div>
